@@ -1,0 +1,104 @@
+#my-entry-point-01 {
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+.vertical-panel-01 {
+	padding: 3px;
+	border: 1px solid gray;
+	width: 654px;
+}
+
+.horizontal-panel-01 {
+	padding: 3px;
+	margin-bottom: 5px;
+	
+}
+
+.horizontal-panel-01 .button-01 {
+	margin-right: 10px;
+}
+.horizontal-panel-02 {
+	border: 1px solid lightyellow;
+	margin-top: 3px;
+}
+
+.header-01 {
+	font-size: 200%;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+	border-bottom: 1px solid #DEDEDE;
+	margin-bottom: 5px;
+}
+
+.interview-question-text-01 {
+	border-bottom: 1px solid #DEDEDE;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: 150%;
+	margin-left: 5px;
+	padding: 5px;
+	border: 1px solid #CC9900;
+	background-color: #EFEFEF;
+	color: red;
+}
+
+.status-01 {
+	margin-right: 3px;
+	white-space: nowrap;
+	margin-left: 3px;
+	border: 1px solid gray;
+	background-color: #DEDEDE;
+	padding: 3px;
+	color: blue;
+	font-size: 90%;
+}
+
+.flex-table-01 {
+	margin-top: 10px;
+	border-collapse: collapse;
+	padding: 3px;
+	margin-bottom: 10px;
+	margin-left: 3px;
+}
+
+.td-01, .hdr-td-01 {
+	vertical-align: top;
+	text-align: left;
+	white-space: nowrap;
+	padding: 3px 15px 3px 5px;
+	border: 1px solid #DEDEDE;
+	margin-right: 10px;
+}
+
+.hdr-td-01 {
+	font-weight: bold;
+	font-size: 120%;
+	background-color: #EDEDED;
+	text-align: center;
+}
+
+.tr-01 {
+}
+
+.tr-01-selected {
+	background-color: yellow;
+	font-style: italic;
+	color: red;
+}
+
+.tr-01:HOVER {
+	background-color: #CCFFFF;
+}
+
+.tr-01-odd {
+	background-color: lightyellow;
+}
+
+.tr-01-even {
+	background-color: white;
+}
+
+

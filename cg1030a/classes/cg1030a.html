@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>CG 1030a</title>
+    <style>
+        body {
+            padding: 3px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: medium;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 7px;
+        }
+        table {
+            border-collapse: collapse;
+            padding: 2px;
+        }
+        input {
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>CG 1030a</h1>
+
+<div id="cg01"></div>
+
+<div id="footer01" style="color: lightgrey; font-size: smaller; text-align: center; bottom: 10px; position: fixed; width: 100%;"></div>
+
+<script type="text/javascript"
+        src="../scalajs-prj918a-jsdeps.min.js"></script>
+<script type="text/javascript"
+        src="../scalajs-prj918a-opt.js"></script>
+
+<script type="text/javascript">
+    cg1030a.cg01(document.getElementById('cg01'));
+</script>
+
+<script type="text/javascript">
+    cg1030a.addFooterText(document.getElementById('footer01'));
+</script>
+
+
+</body>
+</html>
