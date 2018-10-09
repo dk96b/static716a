@@ -8986,6 +8986,23 @@ $c_Ltutorial_webapp_helper_Helper01$.prototype.postman$und2$undcurl$undG__V = (f
   var thiz$2 = $as_T(ta.value);
   ou.textContent = this.create$undpostman2$undcurl$undscript__T__T__T__T(jsx$2, jsx$1, $as_T(thiz$2.trim()))
 });
+$c_Ltutorial_webapp_helper_Helper01$.prototype.tutorial$webapp$helper$Helper01$$get$undrhs$undnumber__Lujson_Js$Num__T = (function(n0) {
+  var this$1 = $m_sjsr_RuntimeLong$();
+  var value = n0.value$2;
+  var lo = this$1.scala$scalajs$runtime$RuntimeLong$$fromDoubleImpl__D__I(value);
+  var hi = this$1.scala$scalajs$runtime$RuntimeLong$$hiReturn$f;
+  if (((hi === 0) ? (((-2147483648) ^ lo) > (-608455523)) : (hi > 0))) {
+    var array = ["\"", "\""];
+    var jsx$1 = new $c_s_StringContext().init___sc_Seq(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array));
+    var array$1 = [n0];
+    return jsx$1.s__sc_Seq__T(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$1))
+  } else {
+    var array$2 = ["", ""];
+    var jsx$2 = new $c_s_StringContext().init___sc_Seq(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$2));
+    var array$3 = [n0];
+    return jsx$2.s__sc_Seq__T(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$3))
+  }
+});
 $c_Ltutorial_webapp_helper_Helper01$.prototype.append$undprepend$undS__V = (function() {
   var jsx$2 = $m_Ltutorial_webapp_CG1030a01$().input1$1;
   var array = ["", "---"];
@@ -9286,67 +9303,74 @@ $c_Ltutorial_webapp_helper_Helper01$.prototype.printJsonTreeTestAssertions__scm_
     elem$1$1 = elem;
     if ($is_Lujson_Js$Num(v01)) {
       var x2 = $as_Lujson_Js$Num(v01);
-      var this$18 = $m_sjsr_RuntimeLong$();
-      var value = x2.value$2;
-      var lo = this$18.scala$scalajs$runtime$RuntimeLong$$fromDoubleImpl__D__I(value);
-      var hi = this$18.scala$scalajs$runtime$RuntimeLong$$hiReturn$f;
-      if (((hi === 0) ? (((-2147483648) ^ lo) > (-2047483648)) : (hi > 0))) {
-        var array$4 = ["\"", "\""];
-        var jsx$3 = new $c_s_StringContext().init___sc_Seq(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$4));
-        var array$5 = [v01];
-        var rhs = jsx$3.s__sc_Seq__T(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$5))
-      } else {
-        var array$6 = ["", ""];
-        var jsx$4 = new $c_s_StringContext().init___sc_Seq(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$6));
-        var array$7 = [v01];
-        var rhs = jsx$4.s__sc_Seq__T(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$7))
-      };
-      var array$8 = ["\npm.test(\"test/assert on ", "\", function () { \n  pm.expect(jsonData", "", ").to.equal(", ");\n});\n"];
-      var jsx$5 = new $c_s_StringContext().init___sc_Seq(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$8));
-      var array$9 = [$as_T(elem$1$1), D, $as_T(elem$1$1), rhs];
-      sb.append__T__scm_StringBuilder(jsx$5.s__sc_Seq__T(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$9)))
+      var rhs = $m_Ltutorial_webapp_helper_Helper01$().tutorial$webapp$helper$Helper01$$get$undrhs$undnumber__Lujson_Js$Num__T(x2);
+      var array$4 = ["\npm.test(\"test/assert on ", "\", function () { \n  pm.expect(jsonData", "", ").to.equal(", ");\n});\n"];
+      var jsx$3 = new $c_s_StringContext().init___sc_Seq(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$4));
+      var array$5 = [$as_T(elem$1$1), D, $as_T(elem$1$1), rhs];
+      sb.append__T__scm_StringBuilder(jsx$3.s__sc_Seq__T(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$5)))
     } else if ($is_Lujson_Js$Str(v01)) {
-      var array$10 = ["\npm.test(\"test/assert on ", "\", function () { \n  pm.expect(jsonData", "", ").to.equal(", ");\n});\n"];
-      var jsx$6 = new $c_s_StringContext().init___sc_Seq(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$10));
-      var array$11 = [$as_T(elem$1$1), D, $as_T(elem$1$1), v01];
-      sb.append__T__scm_StringBuilder(jsx$6.s__sc_Seq__T(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$11)))
+      var array$6 = ["\npm.test(\"test/assert on ", "\", function () { \n  pm.expect(jsonData", "", ").to.equal(", ");\n});\n"];
+      var jsx$4 = new $c_s_StringContext().init___sc_Seq(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$6));
+      var array$7 = [$as_T(elem$1$1), D, $as_T(elem$1$1), v01];
+      sb.append__T__scm_StringBuilder(jsx$4.s__sc_Seq__T(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$7)))
     } else if ($is_Lujson_Js$Bool(v01)) {
-      var array$12 = ["\npm.test(\"test/assert on ", "\", function () { \n  pm.expect(jsonData", "", ").to.equal(", ");\n});\n        \t\t"];
-      var jsx$7 = new $c_s_StringContext().init___sc_Seq(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$12));
-      var array$13 = [$as_T(elem$1$1), D, $as_T(elem$1$1), v01];
-      sb.append__T__scm_StringBuilder(jsx$7.s__sc_Seq__T(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$13)))
+      var array$8 = ["\npm.test(\"test/assert on ", "\", function () { \n  pm.expect(jsonData", "", ").to.equal(", ");\n});\n        \t\t"];
+      var jsx$5 = new $c_s_StringContext().init___sc_Seq(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$8));
+      var array$9 = [$as_T(elem$1$1), D, $as_T(elem$1$1), v01];
+      sb.append__T__scm_StringBuilder(jsx$5.s__sc_Seq__T(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$9)))
     } else if ($is_Lujson_Js$Arr(v01)) {
       var x5 = $as_Lujson_Js$Arr(v01);
       var elem$2 = new $c_ju_concurrent_atomic_AtomicInteger().init___();
       var elem$1$2 = null;
       elem$1$2 = elem$2;
-      var this$40 = x5.value$2;
+      var this$31 = x5.value$2;
       var i = 0;
-      var top = this$40.size0$6;
+      var top = this$31.size0$6;
       while ((i < top)) {
-        var arg1 = this$40.array$6.get(i);
+        var arg1 = this$31.array$6.get(i);
         var a0 = $as_Lujson_Js(arg1);
-        var array$14 = ["", "", "[", "]"];
-        var jsx$9 = new $c_s_StringContext().init___sc_Seq(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$14));
-        var jsx$8 = $as_T(elem$1);
-        var this$43 = $as_ju_concurrent_atomic_AtomicInteger(elem$1$2);
-        var old = this$43.java$util$concurrent$atomic$AtomicInteger$$value$f;
-        this$43.java$util$concurrent$atomic$AtomicInteger$$value$f = ((1 + old) | 0);
-        var array$15 = [jsx$8, key, old];
-        elem$1$1 = jsx$9.s__sc_Seq__T(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$15));
-        $m_Ltutorial_webapp_helper_Helper01$().printJsonTreeTestAssertions__scm_StringBuilder__T__Lujson_Js__V(sb, $as_T(elem$1$1), a0);
+        var array$10 = ["", "", "[", "]"];
+        var jsx$7 = new $c_s_StringContext().init___sc_Seq(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$10));
+        var jsx$6 = $as_T(elem$1);
+        var this$34 = $as_ju_concurrent_atomic_AtomicInteger(elem$1$2);
+        var old = this$34.java$util$concurrent$atomic$AtomicInteger$$value$f;
+        this$34.java$util$concurrent$atomic$AtomicInteger$$value$f = ((1 + old) | 0);
+        var array$11 = [jsx$6, key, old];
+        elem$1$1 = jsx$7.s__sc_Seq__T(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$11));
+        if ($is_Lujson_Js$Num(a0)) {
+          var x2$1 = $as_Lujson_Js$Num(a0);
+          var rhs01 = $m_Ltutorial_webapp_helper_Helper01$().tutorial$webapp$helper$Helper01$$get$undrhs$undnumber__Lujson_Js$Num__T(x2$1);
+          var array$12 = ["\npm.test(\"test/assert on ", "\", function () { \n  pm.expect(jsonData", "", ").to.equal(", ");\n});\n        \t\t"];
+          var jsx$8 = new $c_s_StringContext().init___sc_Seq(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$12));
+          var array$13 = [$as_T(elem$1$1), D, $as_T(elem$1$1), rhs01];
+          sb.append__T__scm_StringBuilder(jsx$8.s__sc_Seq__T(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$13)))
+        } else if ($is_Lujson_Js$Bool(a0)) {
+          var x3 = $as_Lujson_Js$Bool(a0);
+          var array$14 = ["\npm.test(\"test/assert on ", "\", function () { \n  pm.expect(jsonData", "", ").to.equal(", ");\n});\n        \t\t"];
+          var jsx$9 = new $c_s_StringContext().init___sc_Seq(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$14));
+          var array$15 = [$as_T(elem$1$1), D, $as_T(elem$1$1), x3];
+          sb.append__T__scm_StringBuilder(jsx$9.s__sc_Seq__T(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$15)))
+        } else if ($is_Lujson_Js$Str(a0)) {
+          var x4 = $as_Lujson_Js$Str(a0);
+          var array$16 = ["\npm.test(\"test/assert on ", "\", function () { \n  pm.expect(jsonData", "", ").to.equal(", ");\n});\n        \t\t"];
+          var jsx$10 = new $c_s_StringContext().init___sc_Seq(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$16));
+          var array$17 = [$as_T(elem$1$1), D, $as_T(elem$1$1), x4];
+          sb.append__T__scm_StringBuilder(jsx$10.s__sc_Seq__T(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$17)))
+        } else {
+          $m_Ltutorial_webapp_helper_Helper01$().printJsonTreeTestAssertions__scm_StringBuilder__T__Lujson_Js__V(sb, $as_T(elem$1$1), a0)
+        };
         i = ((1 + i) | 0)
       }
     } else if ($is_Lujson_Js$Obj(v01)) {
       $m_Ltutorial_webapp_helper_Helper01$().printJsonTreeTestAssertions__scm_StringBuilder__T__Lujson_Js__V(sb, $as_T(elem$1$1), v01)
     } else {
-      var array$16 = ["\npm.test(\"test/assert null check on ", "\", function () { \n  pm.expect(jsonData", "", ").to.be.a('null');\n});\n"];
-      var jsx$10 = new $c_s_StringContext().init___sc_Seq(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$16));
-      var array$17 = [$as_T(elem$1$1), D, $as_T(elem$1$1)];
-      sb.append__T__scm_StringBuilder(jsx$10.s__sc_Seq__T(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$17)))
+      var array$18 = ["\npm.test(\"test/assert null check on ", "\", function () { \n  pm.expect(jsonData", "", ").to.be.a('null');\n});\n"];
+      var jsx$11 = new $c_s_StringContext().init___sc_Seq(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$18));
+      var array$19 = [$as_T(elem$1$1), D, $as_T(elem$1$1)];
+      sb.append__T__scm_StringBuilder(jsx$11.s__sc_Seq__T(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$19)))
     };
-    var this$50 = these;
-    these = this$50.tail__sci_List()
+    var this$53 = these;
+    these = this$53.tail__sci_List()
   }
 });
 $c_Ltutorial_webapp_helper_Helper01$.prototype.isGeneratedRandomCharInSet__C__Z = (function(c) {
